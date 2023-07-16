@@ -1,0 +1,40 @@
+class employee:
+  def __init__ (self,ID,Name,Salary,location,Gender,Bloodgroup,Doj,Experience,Mobile,Address,Dob):
+    self.e1=ID
+    self.e2=Name
+    self.e3=Salary
+    self.e4=location
+    self.e5=Gender
+    self.e6=Bloodgroup
+    self.e7=Doj
+    self.e8=Experience
+    self.e9=Mobile
+    self.e10=Address
+    self.e11=Dob
+
+class tcs(employee):
+  def show(self):
+    print("my id is",self.e1,"my name is",self.e2,"my moile num is",self.e9)
+
+class hcl(employee):
+  def show(self):
+    print("my id is",self.e1,"my name is",self.e2,"my bloodgroup is",self.e6,"my location is",self.e4)
+  def update(self,first_name,second_name):
+    self.e2=first_name+second_name
+
+class infy(employee):
+  def show(self):
+    print("my id is",self.e1,"my name is",self.e2,"my DOJ is",self.e7,"my DOB is",self.e11)
+  def update(self,country):
+    self.c1=country
+    print("my id is",self.e1,"my name is",self.e2,"my bloodgroup is",self.e6,"my location is",self.e4,"my country is",self.c1)
+   
+TCS=tcs("TCS01","Ajithkumar sekar",50000,"chennai","male","a+","today","5 years","7010350156","sivagiri,erode","21/04/19996")
+HCL=hcl("HCL01","Ajithkumar sekar",50000,"chennai","male","a+","today","5 years","7010350156","sivagiri,erode","21/04/19996")
+INFY=infy("INFY01","Ajithkumar sekar",50000,"chennai","male","a+","today","5 years","7010350156","sivagiri,erode","21/04/19996")
+TCS.show()
+HCL.show()
+INFY.show()
+HCL.update("Ajith ","kumar")
+HCL.show()
+INFY.update("india")
